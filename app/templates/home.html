@@ -1,15 +1,20 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME</title>
-    {% load static %}
-    <link rel="stylesheet" href="{% static 'app\static\css\home.css' %}">
+    <link rel="stylesheet" type="text/css" href="../static/css/home.css">
+    
 </head>
 <body>
-    <h1>EASY CONVERT</h1>
-    <a href="{%url 'date'%}">date</a>
-    <a href="{%url 'unit'%}">unit</a>
+    <h1><span style="color:#ffd071">EASY</span> <span style="color:#f0776c">CONVERT</span></h1>
+    <nav>
+        <ul>
+          <li><a href="{%url 'date'%}">DATE</a></li>
+          <li><a href="{%url 'unit'%}">UNIT</a></li>
+        </ul>
+      </nav>
 </body>
 </html>
