@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UNIT</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'app\static\css\unit.css' %}">
 </head>
 <body>
     <h1>UNIT</h1>
+    <a href="{% url 'weight' %}">WEIGHT</a>
+    <a href="{% url 'length' %}">LENGTH</a>
+    <a href="{% url 'volume' %}">VOLUME</a>
 </body>
 </html>

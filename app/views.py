@@ -11,4 +11,12 @@ def date(request):
 def unit(request):
     return render(request,'unit.html')
 
+def length(request):
+    return render(request, 'length.html')
+
+def weight(request):
+    return render(request, 'weight.html')
+
+def volume(request):
+    return render(request, 'volume.html')
 
