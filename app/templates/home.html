@@ -1,15 +1,24 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME</title>
-    {% load static %}
-    <link rel="stylesheet" href="{% static 'app\static\css\home.css' %}">
+    <link rel="stylesheet" type="text/css" href="../static/css/home.css">
 </head>
 <body>
     <h1>EASY CONVERT</h1>
     <a href="{%url 'date'%}">date</a>
     <a href="{%url 'unit'%}">unit</a>
+
+    <div class="section">
+        <div class="section__item">
+            <a href="#0" class="sm-link sm-link_bg sm-link9">
+                <span class="sm-link__label">Hover effect #9</span>
+            </a>
+        </div>
+    </div>
 </body>
 </html>
