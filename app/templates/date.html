@@ -6,8 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DATE</title>
     <link rel="stylesheet" type="text/css" href="../static/css/date.css">
+    <script src="{% static '../static/js/date.js' %}" type="text/javascript"></script>
 </head>
 <body>
-    <h1>DATE</h1>
+    <input type="text" id="input"><br>
+    <textarea id="output"></textarea>
+    <button onclick="input()">ENTER</button>
+    
+    <script type="text/javascript">
+        var now = new Date();
+        var nowYear = now.getFullYear();
+        document.write( 'STANDARD : ' + nowYear );
+    </script>
+
 </body>
 </html>
