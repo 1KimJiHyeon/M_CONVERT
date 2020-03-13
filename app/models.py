@@ -1,9 +1,10 @@
 from django.db import models
+from django.utils import timezone
 
 # Create your models here.
 
 class Date_Convert(models.Model):
-    standard_date = models.datetimefield(default=timezone.now)
+    standard_date = models.DateTimeField(default=timezone.now)
 
 class Unit_Convert(models.Model):
     standard_length = models.IntegerField(default=0)
