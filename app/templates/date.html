@@ -9,5 +9,12 @@
 </head>
 <body>
     <h1>DATE</h1>
+    <p>
+        <label>서기: </label>
+        <input id="inputAD" type="number" placeholder="서기"
+        oninput="AfterDieToBuddhist(this.value)" onchange="AfterDieToBuddhist(this.value)">
+    </p>
+    <label>불기: <span id="outputMeters"></span>년</p></label>
+    <script type="text/javascript" src="../static/js/date.js"></script>
 </body>
 </html>
