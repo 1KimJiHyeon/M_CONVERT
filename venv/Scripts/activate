@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\user\Desktop\Toy_Convert\venv"
+VIRTUAL_ENV="C:\Users\dear1\OneDrive\바탕 화면\Toy_Convert\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
