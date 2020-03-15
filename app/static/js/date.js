@@ -20,4 +20,14 @@ function SetCurrentYear(){
   
   // document.getElementById('CurrnetYear').valueAsDate = new Date();
 
-}
+};
+
+
+
+
+
+// menu bar js
+$(".menu-opener").click(function(){
+  $(".menu-opener, .menu-opener-inner, .menu").toggleClass("active");
+});
+// menu bar js end

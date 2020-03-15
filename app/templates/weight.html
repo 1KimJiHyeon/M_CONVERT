@@ -8,6 +8,26 @@
     <link rel="stylesheet" type="text/css" href="../static/css/weight.css">
 </head>
 <body>
+    <nav class="menu-opener">
+        <div class="menu-opener-inner"></div>
+      </nav>
+      <nav class="menu">
+        <ul class="menu-inner">
+          <a href="{% url 'home' %}" class="menu-link">
+            <li>HOME</li>
+          </a>
+          <a href="{% url 'date' %}" class="menu-link">
+            <li>DATE</li>
+          </a>
+          <a href="{% url 'unit' %}" class="menu-link">
+              <li>UNIT</li>
+          </a>
+        </ul>
+      </nav>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
+      <script type="text/javascript" src="../static/js/weight.js."></script>
+      <script src="menu-opener.js"></script>
+  
     <h1>WEIGHT</h1>
 </body>
 </html>

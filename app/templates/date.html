@@ -8,15 +8,25 @@
     <link rel="stylesheet" type="text/css" href="../static/css/date.css">
 </head>
 <body>
-    <input type="text" id="input"><br>
-    <textarea id="output"></textarea>
-    <button onclick="input()">ENTER</button>
-    
-    <script type="text/javascript">
-        var now = new Date();
-        var nowYear = now.getFullYear();
-        document.write( 'STANDARD : ' + nowYear );
-    </script>
+    <!--menu bar-->
+    <nav class="menu-opener">
+        <div class="menu-opener-inner"></div>
+    </nav>
+    <nav class="menu">
+        <ul class="menu-inner">
+          <a href="{% url 'home' %}" class="menu-link">
+            <li>HOME</li>
+          </a>
+          <a href="{% url 'unit' %}" class="menu-link">
+            <li>UNIT</li>
+          </a>
+        </ul>
+    </nav>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
+      <script src="menu-opener.js"></script>
+  
+    <!--menu bar end-->
+
 
     <!-- <br>
         <input type="text" id="CurrentYear" value="test" onclick="SetCurrentYear()">
