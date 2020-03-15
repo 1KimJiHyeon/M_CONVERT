@@ -36,10 +36,12 @@
     <p>
         <label>서기: </label>
         <input id="InputAD" type="number" placeholder="서기" onfocus="SetCurrentYear()"
-        oninput="AfterDieToBuddhist(this.value); AfterDieToDanki(this.value);" onchange="AfterDieToBuddhist(this.value); AfterDieToDanki(this.value);">
+        oninput="AfterDieToBuddhist(this.value); AfterDieToDanki(this.value); AfterDieToJudaism(this.value)" 
+        onchange="AfterDieToBuddhist(this.value); AfterDieToDanki(this.value); AfterDieToJudaism(this.value)">
     </p>
     <label>불기: <span id="OutputBuddhist"></span>년</p></label>
     <label>단기: <span id="OutputDanki"></span>년</p></label>
+    <label>유대교: <span id="OutputJudaism"></span>년</p></label>
 
     <script type="text/javascript" src="../static/js/date.js"></script>
 </body>
