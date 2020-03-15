@@ -154,3 +154,12 @@
       width: calc(100%/1.5);
     }
   }
+
+  h1{
+    color : #ffbf3e;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    text-shadow: 4px 2px 2px black;
+    margin-top: 2em;
+    font-size: 3em;
+  }
