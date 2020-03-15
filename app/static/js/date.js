@@ -7,7 +7,7 @@ function AfterDieToDanki(valNum) {
   document.getElementById("OutputDanki").innerHTML = parseInt(valNum) + 2333 ;
   }
 
-  function AfterDieToDanki(valNum) {
+  function AfterDieToJudaism(valNum) {
   document.getElementById("OutputJudaism").innerHTML = parseInt(valNum) + 3760 ;
   }
   
@@ -15,6 +15,7 @@ function SetCurrentYear(){
   var d = new Date();
   var n = d.getFullYear();
   document.getElementById('InputAD').value = n;
+  return n
 
   // document.getElementById('CurrentYear').valueAsDate = new Date();
   // var today = new Date();	

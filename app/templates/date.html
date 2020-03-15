@@ -35,7 +35,7 @@
     <h1>DATE</h1>
     <p>
         <label>서기: </label>
-        <input id="InputAD" type="number" placeholder="서기" onfocus="SetCurrentYear()"
+        <input id="InputAD" type="number" placeholder="서기"
         oninput="AfterDieToBuddhist(this.value); AfterDieToDanki(this.value); AfterDieToJudaism(this.value)" 
         onchange="AfterDieToBuddhist(this.value); AfterDieToDanki(this.value); AfterDieToJudaism(this.value)">
     </p>
@@ -44,5 +44,24 @@
     <label>유대교: <span id="OutputJudaism"></span>년</p></label>
 
     <script type="text/javascript" src="../static/js/date.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.js" type="text/javascript"></script>
+ 
+      <script>
+      $(document).ready(function () 
+      {   
+
+
+          $('html').one('mouseover',function(){
+              
+            SetCurrentYear();
+            AfterDieToBuddhist(SetCurrentYear()); 
+            AfterDieToDanki(SetCurrentYear()); 
+            AfterDieToJudaism(SetCurrentYear());
+      
+            $(this).off();
+          });
+          
+      });
+      </script>
 </body>
 </html>
