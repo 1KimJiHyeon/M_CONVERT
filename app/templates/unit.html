@@ -8,8 +8,24 @@
     <link rel="stylesheet" type="text/css" href="../static/css/unit.css">
 </head>
 <body>
+  <link rel="stylesheet" href="style.css">
+  <nav class="menu-opener">
+    <div class="menu-opener-inner"></div>
+  </nav>
+  <nav class="menu">
+    <ul class="menu-inner">
+      <a href="{% url 'home' %}" class="menu-link">
+        <li>HOME</li>
+      </a>
+      <a href="{% url 'date' %}" class="menu-link">
+        <li>DATE</li>
+      </a>
+    </ul>
+  </nav>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="../static/js/unit.js"></script>
+  <script src="menu-opener.js"></script>
     <h1>UNIT</h1>
-
     <nav class="skew-menu">
         <ul>
           <li><a href="{% url 'weight' %}">WEIGHT</a></li>
