@@ -163,3 +163,14 @@
     margin-top: 2em;
     font-size: 3em;
   }
+
+  p{
+    color: black; 
+    text-align: center;   
+    font-size: 2em;
+  }
+
+  input[type="number"]{
+    height: auto;
+    padding: .8em .5em;
+  }
