@@ -33,7 +33,7 @@
         -->
 
     <h1>DATE</h1>
-    <br><p>
+    <br><div class="wrap"><p>
         <label>서기: </label>
         <input id="InputAD" type="number" placeholder="서기"
         oninput="AfterDieToBuddhist(this.value); AfterDieToDanki(this.value); AfterDieToJudaism(this.value)" 
@@ -42,6 +42,7 @@
     <p><label>불기: <span id="OutputBuddhist"></span>년</p></label>
     <p><label>단기: <span id="OutputDanki"></span>년</p></label>
     <p><label>유대교: <span id="OutputJudaism"></span>년</p></label>
+    </div>
 
     <script type="text/javascript" src="../static/js/date.js"></script>
     <script src="https://code.jquery.com/jquery-1.11.3.js" type="text/javascript"></script>

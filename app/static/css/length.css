@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Sunflower', sans-serif;
+  src: url(https://fonts.google.com/?subset=korean&selection.family=Sunflower:300);
+  font-weight: 200;
+  font-style: normal;
+}
 h1{
     color : #f0776c;
     text-align: center;
@@ -5,6 +11,14 @@ h1{
     text-shadow: 4px 2px 2px black;
     margin-top: 2em;
     font-size: 3em;
+  }
+
+  p{
+    color: black; 
+    text-align: center;   
+    font-size: 2em;
+    width: auto;
+    font: 'sunflower', sans-serif;
   }
 
 
