@@ -31,19 +31,19 @@
     <h1>WEIGHT</h1>
     <br><br>
     <div>
-      <p>
-      <label>그램(g):</label>
-      <input id="inputg" type="number" placeholder="g">
-      </p>
+      <label>그램(g) : </label>
+      <input id="inputg" type="number" placeholder="g"
+      oninput="Convert_oz(this.value); Convert_lb(this.value); Convert_st(this.value); Convert_qtr(this.value); " 
+    onchange="Convert_oz(this.value); Convert_lb(this.value); Convert_st(this.value); Convert_qtr(this.value); ">
       
     </div>
   </form>
   <div>
-    <p><label for="oz">온스(oz):<span id="outputoz"></span></p></label>
-    <p><label for="yd">파운드(lb):<span id="outputlb"></span></p></label>
-    <p><label for="ch">스톤(st):<span id="outputst"></span></p></label>
-    <p><label for="fur">쿼터(qtr):<span id="outputqtr"></span></p></label>
+    <p><label for="oz">온스(oz) : <span id="outputoz"></span></p></label>
+    <p><label for="lb">파운드(lb) : <span id="outputlb"></span></p></label>
+    <p><label for="st">스톤(st) : <span id="outputst"></span></p></label>
+    <p><label for="qtr">쿼터(qtr) : <span id="outputqtr"></span></p></label>
   </div>
-  
+  <script type="text/javascript" src="../static/js/weight.js"></script>
 </body>
 </html>

@@ -32,19 +32,24 @@
 <br><br>
 <form method="post">
   <div>
-    <p><label>센티미터(cm):</label>
-    <input id="inputcm" type="number" placeholder="cm">
-    </p>
+    <label>센치미터(cm) : </label>
+    <input id="inputcm" type="number" placeholder="cm" 
+    oninput="Convert_in(this.value); Convert_ft(this.value); Convert_yd(this.value); Convert_ch(this.value); Convert_fur(this.value); Convert_mile(this.value); Convert_lea(this.value); " 
+    onchange="Convert_in(this.value);Convert_ft(this.value); Convert_yd(this.value); Convert_ch(this.value); Convert_fur(this.value); Convert_mile(this.value); Convert_lea(this.value); " >
+    
   </div>
 </form>
 <div>
-  <p><label for="ft">피트(ft):<span id="outputft"></span></p></label>
-  <p><label for="yd">야드(yd):<span id="outputyd"></span></p></label>
-  <p><label for="ch">체인(ch):<span id="outputch"></span></p></label>
-  <p><label for="fur">펄롱(fur):<span id="outputfur"></span></p></label>
-  <p><label for="mile">마일(mile):<span id="outputmile"></span></p></label>
-  <p><label for="lea">리그(lea):<span id="outputlea"></span></p></label>
+  <p><label for="in">인치(in) : <span id="outputin"></span></p></label>
+  <p><label for="ft">피트(ft) : <span id="outputft"></span></p></label>
+  <p><label for="yd">야드(yd) : <span id="outputyd"></span></p></label>
+  <p><label for="ch">체인(ch) : <span id="outputch"></span></p></label>
+  <p><label for="fur">펄롱(fur) : <span id="outputfur"></span></p></label>
+  <p><label for="mile">마일(mile) : <span id="outputmile"></span></p></label>
+  <p><label for="lea">리그(lea) : <span id="outputlea"></span></p></label>
 </div>
+
+<script type="text/javascript" src="../static/js/length.js"></script>
 
 </body>
 </html>

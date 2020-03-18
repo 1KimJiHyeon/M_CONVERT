@@ -31,18 +31,18 @@
     <h1>VOLUME</h1>
     <br><br>
     <div>
-      <P>
-      <label>컵(cup):</label>
-      <input id="inputcup" type="number" placeholder="cup">
-      </P>
+      <label>리터(L)) : </label>
+      <input id="inputcup" type="number" placeholder="L"
+      oninput=" Convert_pt(this.value); Convert_qt(this.value); Convert_gal(this.value); " 
+    onchange="Convert_pt(this.value); Convert_qt(this.value); Convert_gal(this.value); ">
       
     </div>
   </form>
   <div>
-    <p><label for="pt">파인트(pt):<span id="outputpt"></span></p></label>
-    <p><label for="qt">쿼트(qt):<span id="outputqt"></span></p></label>
-    <p><label for="gal">갤런(gal):<span id="outputgal"></span></p></label>
+    <p><label for="pt">파인트(pt) : <span id="outputpt"></span></p></label>
+    <p><label for="qt">쿼트(qt) : <span id="outputqt"></span></p></label>
+    <p><label for="gal">갤런(gal) : <span id="outputgal"></span></p></label>
   </div>
-  
+  <script type="text/javascript" src="../static/js/volume.js"></script>
 </body>
 </html>
