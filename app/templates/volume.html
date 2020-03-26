@@ -31,8 +31,8 @@
   
     <h1>VOLUME</h1>
     <br><br>
-    <div>
-      <p><label>리터(L) : </label>
+    <div class="wrap">
+      <br><br><br><br><p><label>리터(L) : </label>
       <input id="inputcup" type="number" placeholder="L"
       oninput=" Convert_pt(this.value); Convert_qt(this.value); Convert_gal(this.value); " 
     onchange="Convert_pt(this.value); Convert_qt(this.value); Convert_gal(this.value); ">
@@ -40,7 +40,7 @@
       
     </div>
   </form>
-  <div>
+  <div class="wrap">
     <p><label for="pt">파인트(pt) : <span id="outputpt"></span></p></label>
     <p><label for="qt">쿼트(qt) : <span id="outputqt"></span></p></label>
     <p><label for="gal">갤런(gal) : <span id="outputgal"></span></p></label>
