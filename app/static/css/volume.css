@@ -15,7 +15,12 @@ h1{
     font-family: 'sunflower', sans-serif;
   }
 
-  .wrap { float: left; padding: 10px; width: 45%;}
+  .wrap { float: left; padding: 10px; width: 50%;}
+
+  div{
+    border: 5px solid #f0776c;
+    border-radius: 10px;
+  }
 
 
 
