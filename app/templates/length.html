@@ -34,14 +34,14 @@
 <form method="post">
   <div class="wrap">
     <br><br><br><br><br><br><br><br><br><br><p><label>센치미터(cm) : </label>
-    <input id="inputcm" type="number" placeholder="cm" 
+    <input id="inputcm" type="number" placeholder="cm" style="width: 200px; height: 50px; border-width: 1.7px; border-color: black; border-radius: 7%;"
     oninput="Convert_in(this.value); Convert_ft(this.value); Convert_yd(this.value); Convert_ch(this.value); Convert_fur(this.value); Convert_mile(this.value); Convert_lea(this.value); " 
     onchange="Convert_in(this.value);Convert_ft(this.value); Convert_yd(this.value); Convert_ch(this.value); Convert_fur(this.value); Convert_mile(this.value); Convert_lea(this.value); " >
     </p><br><br><br><br><br><br><br><br><br><br>
     
   </div>
 </form>
-<div class="wrap">
+<div class="wrap"><br>
   <p><label for="in">인치(in) : <span id="outputin"></span></p></label>
   <p><label for="ft">피트(ft) : <span id="outputft"></span></p></label>
   <p><label for="yd">야드(yd) : <span id="outputyd"></span></p></label>
