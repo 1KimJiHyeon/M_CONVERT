@@ -17,7 +17,7 @@ h1{
   p{
     color: black; 
     text-align: center;   
-    font-size: 2em;
+    font-size: 25px;
     width: auto;
     font-family: 'sunflower', sans-serif;
   }
@@ -25,10 +25,18 @@ h1{
 .wrap { float: left; padding: 10px; width: 50%;}
 
 div{
-  border: 5px solid #f0776c;
+  border: 3px solid #f0776c;
   border-radius: 10px;
-  height: 40em;
+  height: 30em;
 }
+input{
+  width: 200px; 
+  height: 50px; 
+  border-width: 1.7px; 
+  border-color: black; 
+  border-radius: 7%;
+}
+
 
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,700);
@@ -187,4 +195,39 @@ a {
     width: -webkit-calc(100%/1.5);
     width: calc(100%/1.5);
   }
+}
+@media screen and (max-width: 873px) and (min-width:470px) {
+  p{
+      
+    font-size: 17px;
+   
+  }
+  div{
+
+    height: 30em;
+    
+  }
+}
+
+
+@media screen and (max-width: 470px) {
+  p{
+      
+    font-size: 14px;
+   
+  }
+
+  
+input{
+width: 100px; 
+height: 40px; 
+border-width: 1.7px; 
+}
+
+div{
+
+height: 30em;
+
+}
+
 }
