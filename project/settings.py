@@ -3,15 +3,17 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-SECRET_KEY = 'j-+y*&4e^n*x_ercxl%xp1wg%-2fg3y^n*+(z=ziv*+kkxd!1w'
+# SECRET_KEY = 'j-+y*&4e^n*x_ercxl%xp1wg%-2fg3y^n*+(z=ziv*+kkxd!1w'
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'j-+y*&4e^n*x_ercxl%xp1wg%-2fg3y^n*+(z=ziv*+kkxd!1w')
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# DEBUG = True
+DEBUG = bool( os.environ.get('DJANGO_DEBUG', True) )
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -90,7 +92,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ko-kr'
 
 TIME_ZONE = 'Asia/Seoul'
 
